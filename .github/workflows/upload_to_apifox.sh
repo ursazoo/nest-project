@@ -10,7 +10,7 @@ echo "APIFOX_API_TOKEN === : $APIFOX_API_TOKEN"
 
 # 使用环境变量替换占位符并上传 Swagger 文档
 curl --location --request POST "https://api.apifox.com/v1/projects/${APIFOX_PROJECT_ID}/import-openapi?locale=zh-CN" \
---header "X-Apifox-Api-Version: 1" \
+--header "X-Apifox-Api-Version: 2024-03-28" \
 --header "Authorization: Bearer ${APIFOX_API_TOKEN}" \
 --header "User-Agent: Apifox/1.0.0 (https://apifox.com)" \
 --header "Content-Type: application/json" \
