@@ -25,7 +25,7 @@ jobs:
         run: npm run build
 
       - name: Generate Swagger JSON
-        run: npm run start
+        run: npm run generate-swagger
 
       - name: Upload Swagger to Apifox
         run: bash ./upload_to_apifox.sh
