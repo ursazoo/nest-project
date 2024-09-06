@@ -21,11 +21,11 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Build project
-        run: npm run build
-
       - name: Generate Swagger JSON
         run: npm run generate-swagger
+
+      - name: List files
+        run: ls -la
 
       - name: Upload Swagger to Apifox
         run: bash ./upload_to_apifox.sh
