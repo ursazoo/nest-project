@@ -11,6 +11,17 @@
           }
         }
       }
+    },
+    "/user/get-hello": {
+      "get": {
+        "operationId": "UserController_getHello",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
     }
   },
   "info": {
