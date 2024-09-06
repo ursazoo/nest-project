@@ -28,7 +28,7 @@ jobs:
         run: ls -la
 
       - name: Upload Swagger to Apifox
-        run: bash ./upload_to_apifox.sh
+        run: bash ./github/workflows/upload_to_apifox.sh
         env:
           APIFOX_PROJECT_ID: ${{ secrets.APIFOX_PROJECT_ID }}
           APIFOX_API_TOKEN: ${{ secrets.APIFOX_API_TOKEN }}
